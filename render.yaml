@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: face-recognition-api
+    env: docker
+    plan: starter
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: MODEL_PATH
+        value: /app/models/mobilenet_best.keras
+      - key: CLASS_NAMES
+        value: bujiriri,kabulu,mateo
+      - key: UNKNOWN_THRESHOLD
+        value: "0.60"

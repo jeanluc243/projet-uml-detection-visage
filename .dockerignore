@@ -1,0 +1,18 @@
+.git
+.cache
+__pycache__
+*.pyc
+.pytest_cache
+.venv
+venv
+env
+
+# Training/downloaded data is not needed at runtime.
+downloads
+images
+reports/plots
+reports/confusion
+
+# Local logs and OS files.
+*.log
+.DS_Store
