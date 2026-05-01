@@ -1,6 +1,44 @@
+# macOS
 .DS_Store
 **/.DS_Store
-.cache/
 
-# Trained model artifacts are kept locally or published via Git LFS/releases.
+# Caches
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environnements Python
+.venv/
+venv/
+env/
+
+# Modèles entraînés générés
 models/*.keras
+models/*.h5
+models/*.pt
+models/*.pth
+models/*.onnx
+models/*.tflite
+
+# Données générées ou téléchargées
+downloads/
+images/processed/
+images/dataset/
+dataset/
+
+# Rapports générés par entraînement / évaluation
+reports/*.json
+reports/plots/
+reports/confusion/
+
+# Logs
+*.log
+logs/
+
+downloads/
+images/processed/
+images/dataset/
+dataset/
+reports/

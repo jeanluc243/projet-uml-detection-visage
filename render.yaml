@@ -1,14 +1,25 @@
 services:
   - type: web
     name: face-recognition-api
-    env: docker
+    runtime: python
     plan: starter
-    autoDeploy: true
+    buildCommand: pip install -r requirements.txt
+    startCommand: python scripts/bootstrap_model.py && uvicorn api.main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
+    disk:
+      name: face-model-disk
+      mountPath: /data
+      sizeGB: 5
     envVars:
       - key: MODEL_PATH
-        value: /app/models/mobilenet_best.keras
+        value: /data/models/mobilenet_best.keras
+      - key: REPORTS_DIR
+        value: /data/reports
       - key: CLASS_NAMES
         value: bujiriri,kabulu,mateo
       - key: UNKNOWN_THRESHOLD
         value: "0.60"
+      - key: MB_EPOCHS_STAGE1
+        value: "5"
+      - key: MB_EPOCHS_STAGE2
+        value: "3"
