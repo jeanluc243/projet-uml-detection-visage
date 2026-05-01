@@ -1,0 +1,14 @@
+names:
+- JEANLUC
+- LAURENE
+- MATTHIEU
+nc: 3
+roboflow:
+  license: Private
+  project: visagetrinome
+  url: https://app.roboflow.com/laurenes-workspace/visagetrinome/2
+  version: 2
+  workspace: laurenes-workspace
+test: ../test/images
+train: ../train/images
+val: ../valid/images

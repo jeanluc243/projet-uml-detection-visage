@@ -1,0 +1,57 @@
+{
+  "model": "cnn",
+  "accuracy": 0.8513513513513513,
+  "precision_macro": 0.8463768115942029,
+  "recall_macro": 0.8485852311939267,
+  "f1_macro": 0.8448773448773448,
+  "confusion_matrix": [
+    [
+      20,
+      0,
+      3
+    ],
+    [
+      1,
+      26,
+      3
+    ],
+    [
+      4,
+      0,
+      17
+    ]
+  ],
+  "classification_report": {
+    "bujiriri": {
+      "precision": 0.8,
+      "recall": 0.8695652173913043,
+      "f1-score": 0.8333333333333334,
+      "support": 23.0
+    },
+    "kabulu": {
+      "precision": 1.0,
+      "recall": 0.8666666666666667,
+      "f1-score": 0.9285714285714286,
+      "support": 30.0
+    },
+    "mateo": {
+      "precision": 0.7391304347826086,
+      "recall": 0.8095238095238095,
+      "f1-score": 0.7727272727272727,
+      "support": 21.0
+    },
+    "accuracy": 0.8513513513513513,
+    "macro avg": {
+      "precision": 0.8463768115942029,
+      "recall": 0.8485852311939267,
+      "f1-score": 0.8448773448773448,
+      "support": 74.0
+    },
+    "weighted avg": {
+      "precision": 0.8638072855464161,
+      "recall": 0.8513513513513513,
+      "f1-score": 0.8547443547443547,
+      "support": 74.0
+    }
+  }
+}

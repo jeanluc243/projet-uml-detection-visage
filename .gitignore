@@ -1,0 +1,6 @@
+.DS_Store
+**/.DS_Store
+.cache/
+
+# Trained model artifacts are kept locally or published via Git LFS/releases.
+models/*.keras
